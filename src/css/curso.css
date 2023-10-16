@@ -1,0 +1,21 @@
+.q-expansion-item__toggle-icon--rotated{
+    color: black;
+}
+.boton-menu-curso-audio i{
+    color:var(--primario)
+}
+.boton-menu-curso.selected {
+    background-color: #686868 !important;
+}
+.boton-menu-curso-audio.selected {
+    background-color: #999999 !important;
+}
+.text-grey-2 {
+    color: var(--gris2) !important;
+}
+.boton-menu-curso {
+    transition: .3s;
+}
+.boton-menu-curso:hover {
+    background-color: #575757 !important;
+}

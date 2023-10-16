@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Alte Haas Grotesk';
+    src: url('AlteHaasGrotesk_Bold.woff2') format('woff2'),
+        url('AlteHaasGrotesk_Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alte Haas Grotesk';
+    src: url('AlteHaasGrotesk.woff2') format('woff2'),
+        url('AlteHaasGrotesk.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  ascent-override: 90%;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('AvenirLTStd-Light.woff2') format('woff2'),
+        url('AvenirLTStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('AvenirLTStd-Medium.woff2') format('woff2'),
+        url('AvenirLTStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Rg';
+    src: url('CoolveticaRg-Regular.woff2') format('woff2'),
+        url('CoolveticaRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manifold CF';
+    src: url('ManifoldCF-Bold.woff2') format('woff2'),
+        url('ManifoldCF-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manifold CF Demi';
+    src: url('ManifoldCF-DemiBold.woff2') format('woff2'),
+        url('ManifoldCF-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sovereign';
+    src: url('Sovereign.woff2') format('woff2'),
+        url('Sovereign.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Khmer Sangam MN';
+    src: url('KhmerSangamMN.woff2') format('woff2'),
+        url('KhmerSangamMN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

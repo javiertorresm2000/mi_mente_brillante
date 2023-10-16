@@ -1,0 +1,58 @@
+:root{
+    --e-global-color-secondary: #26343B;
+    --e-global-color-body:#28363D;
+    --primario:#0d6884;
+    --gris1:#A6A6A6;
+    --gris2:#C5C5C5;
+    --gris3:#E6E6E6;
+    --gris4:#f6f6f6;
+    --gris3-trans:#e6e6e6b9;
+    --blanco:rgba(255, 255, 255, 0.698);
+}
+
+.bg-amarillo{
+    background-color: var(--primario) !important;
+   
+}
+.bg-gris{
+    background-color: var(--gris1);
+}
+
+.bg-azul2{
+    background-color: var(--e-global-color-secondary) !important;
+}
+.bg-azul0{
+    background-color: var(--e-global-color-body);
+}
+.t-amarillo{
+    color:var(--primario)
+}
+.texto-amarillo1{
+    color: var(--primario) !important;
+    font-weight: bold;
+    cursor: pointer;
+}
+.texto-gris2{
+    color: var(--gris2);
+
+}
+.rotate-25{
+    transform: rotate(-15deg);
+  }
+  
+  .amarillo-fg{
+    color: var(--primario);
+  }
+  .blancobg{
+      background-color: white;
+      color: var(--gris1);
+  }
+.gris1-fg{
+    color: var(--gris1);
+}
+.gris2-fg{
+    color: var(--gris2);
+}
+.gris3-fg{
+    color: var(--gris3);
+}

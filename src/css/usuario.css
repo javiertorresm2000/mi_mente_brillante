@@ -1,0 +1,59 @@
+.bg-usuarios{
+    background-image: url('../img/Cover-usuarios.jpg');
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+
+.codigo-usuario{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    
+}
+.codigo-usuario span{
+    background-color: var(--primario);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    color: var(--gris1);
+    font-family: 'Alte Haas Grotesk';
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.codigo-usuario .q-field--filled.q-field--readonly .q-field__control::before{
+    border-bottom: none;
+    
+}
+.codigo-usuario .q-field--filled .q-field__control{
+    border-bottom-right-radius: 10px !important;
+    border-top-right-radius: 10px;
+}
+
+ .icono-exclamacion{
+    position: relative !important;
+}
+.titulos i{
+    position: absolute !important;
+    top: -10px !important
+    ;
+}
+.icono-admiracion{
+    position: absolute;
+    bottom: 5px;
+}
+.alinear-center b{
+    font-family: 'Manifold CF';
+    font-weight: bold;
+    color: var(--gris0);
+}
+.separador b{
+    font-family: 'Manifold CF';
+    font-weight: bold;
+    color: var(--gris0);
+}
