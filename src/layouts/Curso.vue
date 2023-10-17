@@ -58,7 +58,7 @@ function cargaAudio(au, car, titulo, menu) {
             <router-view :imagenes="lec" :video="lecv" :audio="leca" :caratula="lecc" :titulo="lect"
                 :inicio="inicio"></router-view>
             <div style="position:absolute; right:0;top:15px">
-                <q-btn color="primary" :icon="ui.menu_curso ? 'fas fa-chevron-right' : 'fas fa-chevron-left'" v-on:click="ui.menu_curso = !ui.menu_curso" />
+                <q-btn color="primary" class="btn-toggle-menu" :icon="ui.menu_curso ? 'fas fa-caret-right' : 'fas fa-caret-left'" v-on:click="ui.menu_curso = !ui.menu_curso" />
             </div>
         </div>
         <q-drawer :width="350" :show-if-above="false" v-model="ui.menu_curso" class="column text-grey-2" side="right"
