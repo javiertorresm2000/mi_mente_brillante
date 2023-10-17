@@ -19,3 +19,7 @@
 .boton-menu-curso:hover {
     background-color: #575757 !important;
 }
+.btn-toggle-menu {
+    font-size: 18px;
+    padding: 12px 2px;
+}
