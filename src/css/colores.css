@@ -1,6 +1,6 @@
 :root{
-    --e-global-color-secondary: #26343B;
-    --e-global-color-body:#28363D;
+    --e-global-color-secondary: #083b4c;
+    --e-global-color-body:#082b3b;
     --primario:#0d6884;
     --gris1:#A6A6A6;
     --gris2:#C5C5C5;
@@ -22,7 +22,7 @@
     background-color: var(--e-global-color-secondary) !important;
 }
 .bg-azul0{
-    background-color: var(--e-global-color-body);
+    background-color: var(--e-global-color-body) !important;
 }
 .t-amarillo{
     color:var(--primario)
@@ -31,6 +31,10 @@
     color: var(--primario) !important;
     font-weight: bold;
     cursor: pointer;
+}
+.texto-amarillo2{
+    color: var(--primario) !important;
+    font-weight: bold;
 }
 .texto-gris2{
     color: var(--gris2);

@@ -228,8 +228,6 @@ export const useCursosStore = defineStore("cursos",{
 
                        
                        if(leccion.acf.imagenes){
-                        console.log(leccion.acf)
-
                         return {
                             id:leccion.id,
                             titulo:leccion.title.rendered,
@@ -261,7 +259,6 @@ export const useCursosStore = defineStore("cursos",{
                     }
                     
                     })
-                    console.log(this.cursoActual)
                     this.cargarTopicos() 
                 }
               })

@@ -39,7 +39,6 @@ function  showNotif (position) {
 }
 
 function cambiarPagina(destino){
-  console.log(destino)
   router.push(destino)
 }
 
@@ -151,9 +150,18 @@ function cambiarPagina(destino){
         label="SOCIAL MEDIA"
         
       >
-        <q-btn no-caps color="gray" flat label="Blog" class="full-width q-pl-xl" align="left" style="background-color:white" square v-on:click="cambiarPagina('/school/dashboard/ventas')"/>
-        <q-btn no-caps color="gray" flat label="Instagram"  class="full-width q-pl-xl" align="left" style="background-color:white" square/>
-        <q-btn no-caps color="gray" flat label="Youtube"  class="full-width q-pl-xl" align="left" style="background-color:white" square/>
+        <div class="social-media-item" v-on:click="cambiarPagina('/school/dashboard/ventas')">
+          <span>Blog</span>
+          <img src="../img/icons/blog_icon.png" alt="" class="encajar-imagen">
+        </div>
+        <div class="social-media-item">
+          <span>Instagram</span>
+          <img src="../img/icons/instagram_icon.png" alt="" class="encajar-imagen">
+        </div>
+        <div class="social-media-item">
+          <span>Youtube</span>
+          <img src="../img/icons/youtube_icon.png" alt="" class="encajar-imagen">
+        </div>
       </q-expansion-item>
       <q-separator inset />
       <q-expansion-item

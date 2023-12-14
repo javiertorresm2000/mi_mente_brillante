@@ -2,7 +2,7 @@
 
 import { ref } from 'vue'
 import FormularioLogin from '../components/Login/FormularioLogin.vue';
-import VinculosBlog from '../components/Login/VinculosBlog.vue';
+import FormularioRegistro from '../components/Login/FormularioRegistro.vue';
 
 const props=defineProps({
     orientation:String,
@@ -23,7 +23,7 @@ function actualizaTam(){
             <formulario-login v-on:vnode-mounted="actualizaTam" :orientation="props.orientation" :device="props.device"></formulario-login>
         </div>
         <div class="col-4 col-xl-3  row items-center " :class="props.device==='tablet'&&props.orientation==='landscape-primary' ? 'col-5' : 'col-4'">
-            <vinculos-blog :tamh="tamh"></vinculos-blog>
+            <formulario-registro :tamh="tamh"></formulario-registro>
         </div>
    </div>
    <!-- muestra si es smartphone vertical -->
