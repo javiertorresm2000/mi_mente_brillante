@@ -9,8 +9,6 @@ const props = defineProps({
     titulo: String
 });
 
-console.log(props.audio)
-
 </script>
 
 <template>

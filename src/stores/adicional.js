@@ -285,7 +285,6 @@ export const useAdicionalStore = defineStore("adicional",{
                     })
                    this.loading=false
                 }
-                console.log(this.cursos)
               })
               .catch(error => console.log('error', error));
         },

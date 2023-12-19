@@ -113,7 +113,7 @@ export const useUsuarioStore = defineStore("usuario",{
                             this.reg_success=false
                             if(!nuevo){
                                 nuevo=false
-                                router.push('/school/dashboard') 
+                                router.push('/school/dashboard/programas/marketing') 
                             }
                             
                             }
@@ -159,7 +159,6 @@ export const useUsuarioStore = defineStore("usuario",{
             .then(response => response.text())
             .then(result => {
                 const res=JSON.parse(result)
-                console.log(res.data.status)
                 if(res.data){
                     if(res.data.status==200){
                         
@@ -174,7 +173,7 @@ export const useUsuarioStore = defineStore("usuario",{
                         this.mensaje_error='',
                         this.loading=false
                         this.usuario.reg_success=false
-                        router.push('/school/dashboard')
+                        router.push('/school/dashboard/programas/marketing')
                     }
                 }
             })
@@ -249,8 +248,7 @@ export const useUsuarioStore = defineStore("usuario",{
                 .then(response => response.text())
                 .then(result => {
                     this.usuario.loading1=false
-                    console.log(result)
-                    router.push('/school/dashboard') 
+                    router.push('/school/dashboard/programas/marketing') 
                 })
                 .catch(error => console.log('error', error));
             })
@@ -455,7 +453,6 @@ export const useUsuarioStore = defineStore("usuario",{
                    .then(result => {
                         const res1=JSON.parse(result)
                         this.usuario.loading3=false
-                       console.log("sexo:"+res1.description)
                        this.usuario.sexo=res1.description
                         
                    })
@@ -466,7 +463,6 @@ export const useUsuarioStore = defineStore("usuario",{
 
             },
             async actualizarUsuario(fname,lname,add1,city,post,country,phone,sex){
-                console.log('actualizacion de usuario')
                 this.usuario.loading4=true
                 var myHeaders = new Headers();
                 myHeaders.append("Content-Type", "application/json");
@@ -558,7 +554,6 @@ export const useUsuarioStore = defineStore("usuario",{
                 .then(response => response.text())
                 .then(result => {
                     this.usuario.loading5=false
-                    console.log(result)
                 })
                 .catch(error => console.log('error', error));
             },

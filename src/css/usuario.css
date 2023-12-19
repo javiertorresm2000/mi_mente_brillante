@@ -5,9 +5,7 @@
     background-repeat: no-repeat;
     background-size:contain;
 }
-
-
-.codigo-usuario{
+.codigo-usuario {
     display: grid;
     grid-template-columns: 120px 1fr;
     align-items: center;

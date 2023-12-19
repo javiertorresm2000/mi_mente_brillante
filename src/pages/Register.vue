@@ -3,7 +3,6 @@
 import router from '../routes/routes.js';
 
 function cambiarPagina(destino){
-  console.log(destino)
   router.push(destino)
 }
 </script>

@@ -192,3 +192,19 @@ backdrop-filter: blur(7.6px);
   object-fit: cover;
   margin-left: 15px;
 }
+
+.social-media-item {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px 5px 30px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.social-media-item:hover {
+  background-color: rgb(227, 227, 227);
+}

@@ -73,7 +73,7 @@ function cargaAudio(au, car, titulo, menu) {
             </div>
             <div class="q-pa-md q-pl-lg column">
                 <div class="text-h5 text-primary" style="text-transform: uppercase;">PROGRAMA</div>
-                <div class="text-caption">__</div>
+                <div class="text-caption"></div>
                 <div class="text-h6">{{ curso.cursoActual.titulo }}</div>
             </div>
             <q-separator color="grey-6" size="2px" />
@@ -103,7 +103,7 @@ function cargaAudio(au, car, titulo, menu) {
                                         group="lecciones">
                                         <div class="bg-grey-9">
                                             <q-btn no-caps flat class="full-width q-pl-xl boton-menu-curso" color="grey-8" text-color="white"
-                                                align="left" label="Introduccion"
+                                                align="left" label=""
                                                 :class="{'selected': menu_selected === `${leccion.titulo}0`}"
                                                 v-on:click="cargaImagenes(leccion.imagenes, `${leccion.titulo}0`)"></q-btn>
                                             <template v-for="(topico, index) in leccion.topicos">
