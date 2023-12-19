@@ -97,7 +97,8 @@ const textos = TEXTOS[usuario.usuario.rol] || TEXTOS['usuario']
                 <div class="text-h3 fuente-titulos gris3-fg"> {{ textos.rol }}</div>
                 <div class="text-h5 fuente-subtitulos" style="position: relative;">
                     {{ textos.titulo }}
-                    <q-icon class="texto-amarillo1 icono-admiracion" style="font-size:1.5em" :name="textos.icono" /></div>
+                    <q-icon class="texto-amarillo1 icono-admiracion" style="font-size:1.5em" :name="textos.icono" />
+                </div>
                 <div class="bg-white" v-html="textos.texto0"></div>
                 <div class="col-8 q-pa-sm separador" v-html="textos.texto1"
                     style=" background-color: rgba(255, 255, 255, 0.95);"></div>
@@ -107,4 +108,5 @@ const textos = TEXTOS[usuario.usuario.rol] || TEXTOS['usuario']
                 </div>
             </div>
         </q-scroll-area>
-</div></template>
+    </div>
+</template>
