@@ -41,7 +41,7 @@ function isValidEmail(val) {
 </script>
 <template>
     <q-card id="login" class="shadow-9 column q-pa-xl full-width justify-center redondeado-15 bg-azul2" style="gap: 20px;">
-        <div class="col-1 text-h5 fuente-subtitulos text-bold t-amarillo ">Iniciar Sesion</div>
+        <div class="col-1 text-h5 fuente-subtitulos text t-amarillo ">Iniciar Sesion</div>
         <div class="col column justify-center" style="gap:10px">
             <q-input dense filled bg-color="white" v-model="user" label="Correo electronico"
                 :disable="usuario.usuario.loading" />
@@ -62,7 +62,7 @@ function isValidEmail(val) {
         <div class="col-2 column" style="gap:10px">
             <div class="col"><span class="texto-amarillo1" v-on:click="restaurar = true">Olvidaste tu contraseña? </span>
             </div>
-            <div class="col"> Si aun no tienes cuenta <span class="texto-amarillo2">registrate en el siguiente formulario </span></div>
+            <div class="col"> Si aun no tienes cuenta <span class="texto-amarillo1" v-on:click="registro=true">registrate en el siguiente formulario </span></div>
         </div>
     </q-card>
     <q-dialog persistent v-model="registro" transition-show="slide-up" transition-hide="slide-down">

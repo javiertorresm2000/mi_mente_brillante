@@ -77,9 +77,9 @@ function isValidEmail(val) {
 
 </script>
 <template>
-    <q-card class="bg-azul0 q-pa-lg column no-wrap amarillo"
+    <q-card class="q-pa-lg column no-wrap amarillo"
         style="border-radius: 15px; gap:20px; background-color: #063343;" :style="estiloReg">
-        <!--<q-btn icon="fa fa-times-circle" color="white" flat round dense v-close-popup size="10px" style="position: absolute; top: 10px; right:10px" v-on:click="usuario.logout"/>-->
+        <q-btn v-if="$q.platform.is.mobile" icon="fa fa-times-circle" color="white" flat round dense v-close-popup size="10px" style="position: absolute; top: 10px; right:10px" v-on:click="usuario.logout"/>
         <div class="col-1 row items-center q-pb-none" style="position: relative;">
             <div class=" text-h5 fuente-subtitulos text t-amarillo ">Registro</div>
         </div>
