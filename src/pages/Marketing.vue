@@ -7,6 +7,7 @@ import { ref } from 'vue';
 const ui = useUIStore()
 let cursos = useCursosStore()
 
+
 cursos.obtenerCursos()
 let accion_comprar = ref(false)
 let url_compra = ref('')
