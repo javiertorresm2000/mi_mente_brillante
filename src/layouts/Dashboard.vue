@@ -79,7 +79,7 @@ function cambiarPagina(destino){
                   </div>
                   <q-separator/>
                   <q-btn flat no-caps :ripple="false"  align="left" v-on:click="cambiarPagina('/school/dashboard/usuario')">
-                    Codigo de Embajador
+                    Usuario
                   </q-btn>
                   
                   
@@ -150,7 +150,7 @@ function cambiarPagina(destino){
         label="SOCIAL MEDIA"
         
       >
-        <div class="social-media-item" v-on:click="cambiarPagina('/school/dashboard/ventas')">
+        <div class="social-media-item">
           <span>Blog</span>
           <img src="../img/icons/blog_icon.png" alt="" class="encajar-imagen">
         </div>

@@ -79,7 +79,8 @@ function isValidEmail(val) {
 <template>
     <q-card class="q-pa-lg column no-wrap amarillo"
         style="border-radius: 15px; gap:20px; background-color: #063343;" :style="estiloReg">
-        <q-btn v-if="$q.platform.is.mobile" icon="fa fa-times-circle" color="white" flat round dense v-close-popup size="10px" style="position: absolute; top: 10px; right:10px" v-on:click="usuario.logout"/>
+        <q-btn icon="fa fa-times-circle" color="white" flat round dense v-close-popup size="10px" style="position: absolute; top: 10px; right:10px" v-on:click="usuario.logout"/>
+        <!--<q-btn v-if="$q.platform.is.mobile" icon="fa fa-times-circle" color="white" flat round dense v-close-popup size="10px" style="position: absolute; top: 10px; right:10px" v-on:click="usuario.logout"/>-->
         <div class="col-1 row items-center q-pb-none" style="position: relative;">
             <div class=" text-h5 fuente-subtitulos text t-amarillo ">Registro</div>
         </div>
@@ -136,8 +137,9 @@ function isValidEmail(val) {
                 </template>
             </q-input>
             <div style="display: flex; align-items: center;">
-                <q-checkbox v-model="acceptTerms" keep-color color="primary"/>
-                <a style="color:#a6a6a6;" href="https://mimentebrillante.com/terminos.html" target="_blank">Acepto términos de uso</a>
+                <q-checkbox v-model="acceptTerms" keep-color color="primary"/> 
+                <a style="color:#ffffff;"  class="texto">Acepto &nbsp</a>
+                <a style="color:#a6a6a6;" href="https://mimentebrillante.com/terminos.html" target="_blank" class="texto-amarillo1">términos de uso</a>
             </div>
             <template v-if="acceptTermsError">
                 <span style="color: red;">
