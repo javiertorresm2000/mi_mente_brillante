@@ -62,7 +62,11 @@ function isValidEmail(val) {
         <div class="col-2 column" style="gap:10px">
             <div class="col"><span class="texto-amarillo1" v-on:click="restaurar = true">Olvidaste tu contraseña? </span>
             </div>
-            <div class="col"> Si aun no tienes cuenta <span class="texto-amarillo1" v-on:click="registro=true">registrate en el siguiente formulario </span></div>
+        <br>
+            <div class="col"> Si aun no tienes cuenta <span class="texto-amarillo1" v-on:click="registro=true">registrate en el siguiente botón </span></div>
+            <q-btn class="full-width bg-azul0 texto-amarillo1 text-bold" label="Registrate aquí" v-on:click="registro=true"
+                :loading="usuario.usuario.loading">
+            </q-btn>
         </div>
     </q-card>
     <q-dialog persistent v-model="registro" transition-show="slide-up" transition-hide="slide-down">

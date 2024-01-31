@@ -7,9 +7,8 @@ const TEXTOS = {
         'rol': 'usuario',
         'icono': 'fas fa-exclamation',
         'titulo': `Bienvenido a nuestra familia`,
-        'texto0': `Cuando obtienes un programa <b>tienes acceso ilimitado con un solo pago</b>, puedes acceder al contenido desde tu laptop o desde tu teléfono móvil.<br><br>
-                         La eficiencia del proceso <b>depende de tu disciplina y constancia con el desarrollo de cada paso</b>, sabemos que si estas aquí es por que estas decidido a tomar acción para cambiar el rumbo de tu vida :)<br><br>
-                         Si desarrollas cada programa que adquieres según el paso a paso y el cronograma de actividades; en las primeras semanas vas a comenzar a experimentar cambios positivos internos, principalmente en tu estado de animo y voluntad.`,
+        'texto0': `Cuando obtienes un programa <b>tienes acceso ilimitado con un solo pago</b>, puedes acceder al contenido desde tu laptop o desde tu teléfono móvil, accede a esta plataforma iniciando sesión desde <b>www.mimentebrillante.com</b><br><br>
+                         La eficiencia del proceso <b>depende de tu disciplina y constancia con el desarrollo de cada paso</b>, sabemos que si estas aquí es por que estas decidido a tomar acción para cambiar el rumbo de tu vida :)<br><br>`,
 
         'texto1': `Próximamente <b>podrás vincularte como embajador o asesor externo</b> donde a través de un código podrás recomendar nuestros programas y ganar comisiones por ventas.`
     },

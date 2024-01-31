@@ -2,7 +2,7 @@
 
 import { ref } from 'vue'
 import FormularioLogin from '../components/Login/FormularioLogin.vue';
-import FormularioRegistro from '../components/Login/FormularioRegistro.vue';
+
 
 const props=defineProps({
     orientation:String,
@@ -18,7 +18,7 @@ function actualizaTam(){
 
 </script>
 <template>
-   <div class="col row justify-center bg-azul0" style="gap: 30px;" v-if="props.device!='smartphone'&&props.orientation==='landscape-primary'">
+   <div class="col row justify-center bg-azul0" style="height:100%; width:100%; background-image: url('/src/img/bg10.jpg'); background-size:cover; background-position-y:center: start;; background-repeat: no-repeat;" v-if="props.device!='smartphone'&&props.orientation==='landscape-primary'">
         <div class="col-4 col-xl-3 row items-center" :class="props.device==='tablet'&&props.orientation==='landscape-primary' ? 'col-5' : 'col-4'">
             <formulario-login v-on:vnode-mounted="actualizaTam" :orientation="props.orientation" :device="props.device"></formulario-login>
         </div>
@@ -31,7 +31,7 @@ function actualizaTam(){
         <div class="col-11  q-pl-md q-pr-md column justify-center">
             
                 <div class="col-1 row items-center justify-center">
-                    <q-img src="../img/logo.png" style="width: 40px; height:40px"/>
+                    <q-img src="../img/logogris.png" style="width: 100px; height:40px"/>
                 </div>
                 <div class="q-pt-lg row justify-center">
                     <div class="col-sm-9 col-12">
@@ -41,8 +41,7 @@ function actualizaTam(){
             
         </div>
         <div class="col row bg-primary justify-center items-center" style="font-size:medium; gap:15px">
-            <div class="text-white">WMastery Academy</div>
-            <q-icon name="fas fa-search" color="white" />
+            <div class="text-white">Mi mente brillante ®</div>
         </div>
    </div>
    <div class="col row justify-center items-center bg-azul0"  v-if="props.device==='smartphone'&&props.orientation==='landscape-primary'">
