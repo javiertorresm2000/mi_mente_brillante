@@ -152,10 +152,11 @@ function isValidEmail(val) {
             <q-btn class="full-width bg-amarillo text-white" label="Registrarme" v-on:click="registro"
                 :loading="usuario.usuario.loading1" :disable="usuario.usuario.loading1"></q-btn>
             <br>
-            <div class="col"> Si ya tienes cuenta da click en el siguiente botón</div>
-            <q-btn class="full-width bg-azul0 texto-amarillo1 text-bold" label="Iniciar sesión" v-on:click="() => router.push('/school')"
+            <div class="col"> Si ya tienes una cuenta <span class="texto-amarillo1" v-on:click="() => router.push('/school')">ingresa desde aqui</span></div>
+
+            <!-- <q-btn class="full-width bg-azul0 texto-amarillo1 text-bold" label="Iniciar sesión" v-on:click="() => router.push('/school')"
                 :loading="usuario.usuario.loading">
-            </q-btn>
+            </q-btn> -->
         </div>
         <div v-else class="row" style="gap:15px">
             <q-spinner color="primary" size="3em" :thickness="3" />
