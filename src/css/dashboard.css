@@ -194,6 +194,9 @@ backdrop-filter: blur(7.6px);
 }
 
 .social-media-item {
+  text-decoration: none;
+  outline: none;
+  color: #000000;
   width: 100%;
   background-color: white;
   display: flex;

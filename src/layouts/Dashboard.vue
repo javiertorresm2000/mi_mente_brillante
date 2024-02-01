@@ -150,18 +150,18 @@ function cambiarPagina(destino){
         label="SOCIAL MEDIA"
         
       >
-        <div class="social-media-item">
+        <a class="social-media-item" href="https://blog.mimentebrillante.com" target="_blank">
           <span>Blog</span>
           <img src="../img/icons/blog_icon.png" alt="" class="encajar-imagen">
-        </div>
-        <div class="social-media-item">
+        </a>
+        <a class="social-media-item" href="https://www.instagram.com/mimente_brillante/" target="_blank">
           <span>Instagram</span>
           <img src="../img/icons/instagram_icon.png" alt="" class="encajar-imagen">
-        </div>
-        <div class="social-media-item">
+        </a>
+        <a class="social-media-item" href="https://www.youtube.com/@mimente_brillante/videos" target="_blank">
           <span>Youtube</span>
           <img src="../img/icons/youtube_icon.png" alt="" class="encajar-imagen">
-        </div>
+        </a>
       </q-expansion-item>
       <q-separator inset />
       <q-expansion-item

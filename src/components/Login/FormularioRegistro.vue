@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import { useUIStore } from '../../stores/ui';
 import { useUsuarioStore } from '../../stores/usuario';
+import router from '../../routes/routes';
 
 const usuario = useUsuarioStore()
 const ui = useUIStore()
@@ -77,9 +78,10 @@ function isValidEmail(val) {
 
 </script>
 <template>
-    <q-card class="q-pa-lg column no-wrap amarillo"
-        style="border-radius: 15px; gap:20px; background-color: #063343;" :style="estiloReg">
-        <q-btn icon="fa fa-times-circle" color="white" flat round dense v-close-popup size="10px" style="position: absolute; top: 10px; right:10px" v-on:click="usuario.logout"/>
+    <!-- <q-card class="q-pa-lg column no-wrap amarillo" style="border-radius: 15px; gap:20px; background-color: #063343;" :style="estiloReg"> -->
+    <q-card id="login" class="shadow-9 column q-pa-xl full-width justify-center redondeado-15 bg-azul2" style="gap: 20px;">
+        <!-- <q-btn icon="fa fa-times-circle" color="white" flat round dense v-close-popup size="10px"
+            style="position: absolute; top: 10px; right:10px" v-on:click="usuario.logout" /> -->
         <!--<q-btn v-if="$q.platform.is.mobile" icon="fa fa-times-circle" color="white" flat round dense v-close-popup size="10px" style="position: absolute; top: 10px; right:10px" v-on:click="usuario.logout"/>-->
         <div class="col-1 row items-center q-pb-none" style="position: relative;">
             <div class=" text-h5 fuente-subtitulos text t-amarillo ">Registro</div>
@@ -95,22 +97,22 @@ function isValidEmail(val) {
                     :rules="[val => !!val || 'Dato requerido']" :disable="usuario.usuario.loading1" />
             </div>
             <!-- <div class="row" style="gap:10px;">
-        <div class="row items-center " style="width: 40%;">
-            <div class="col-3" style="color: white;">Sexo</div>
-            <q-option-group
-            v-model="sexo"
-            :options="options"
-            color="bg-amarillo"
-            dark
-            inline
-            dense
-            
-            style="color: white;"
-            />
-        </div> 
-            
-            <q-input class="col" dense outlined v-model="ciudad" label="Ciudad o region" bg-color="white" :rules="[val => !!val || 'Dato requerido']" :disable="usuario.usuario.loading1" />  
-        </div> -->
+                <div class="row items-center " style="width: 40%;">
+                    <div class="col-3" style="color: white;">Sexo</div>
+                    <q-option-group
+                    v-model="sexo"
+                    :options="options"
+                    color="bg-amarillo"
+                    dark
+                    inline
+                    dense
+                    
+                    style="color: white;"
+                    />
+                </div> 
+                    
+                    <q-input class="col" dense outlined v-model="ciudad" label="Ciudad o region" bg-color="white" :rules="[val => !!val || 'Dato requerido']" :disable="usuario.usuario.loading1" />  
+                </div> -->
             <q-input dense outlined v-model="mail" label="Correo" bg-color="white" debounce="1500" :error="mailError"
                 :rules="[val => !!val || 'Dato requerido', isValidEmail,]" :disable="usuario.usuario.loading1">
                 <template v-slot:error>
@@ -137,9 +139,10 @@ function isValidEmail(val) {
                 </template>
             </q-input>
             <div style="display: flex; align-items: center;">
-                <q-checkbox v-model="acceptTerms" keep-color color="primary"/> 
-                <a style="color:#ffffff;"  class="texto">Acepto &nbsp</a>
-                <a style="color:#a6a6a6;" href="https://mimentebrillante.com/terminos.html" target="_blank" class="texto-amarillo1">términos de uso</a>
+                <q-checkbox v-model="acceptTerms" keep-color color="primary" />
+                <a style="color:#ffffff;" class="texto">Acepto &nbsp</a>
+                <a style="color:#a6a6a6;" href="https://mimentebrillante.com/terminos.html" target="_blank"
+                    class="texto-amarillo1">términos de uso</a>
             </div>
             <template v-if="acceptTermsError">
                 <span style="color: red;">
@@ -148,6 +151,11 @@ function isValidEmail(val) {
             </template>
             <q-btn class="full-width bg-amarillo text-white" label="Registrarme" v-on:click="registro"
                 :loading="usuario.usuario.loading1" :disable="usuario.usuario.loading1"></q-btn>
+            <br>
+            <div class="col"> Si ya tienes cuenta da click en el siguiente botón</div>
+            <q-btn class="full-width bg-azul0 texto-amarillo1 text-bold" label="Iniciar sesión" v-on:click="() => router.push('/school')"
+                :loading="usuario.usuario.loading">
+            </q-btn>
         </div>
         <div v-else class="row" style="gap:15px">
             <q-spinner color="primary" size="3em" :thickness="3" />

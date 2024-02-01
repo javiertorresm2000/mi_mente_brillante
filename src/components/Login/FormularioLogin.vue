@@ -1,8 +1,9 @@
 <script setup>
 import { ref } from 'vue'
-import { useUsuarioStore } from '../../stores/usuario';
-import FormularioRegistro from './FormularioRegistro.vue'
+import { useUsuarioStore } from '../../stores/usuario'
+// import FormularioRegistro from './FormularioRegistro.vue'
 import FormularioRestaurar from './FormularioRestaurar.vue'
+import router from '../../routes/routes'
 
 
 const usuario = useUsuarioStore()
@@ -63,15 +64,16 @@ function isValidEmail(val) {
             <div class="col"><span class="texto-amarillo1" v-on:click="restaurar = true">Olvidaste tu contraseña? </span>
             </div>
         <br>
-            <div class="col"> Si aun no tienes cuenta <span class="texto-amarillo1" v-on:click="registro=true">registrate en el siguiente botón </span></div>
-            <q-btn class="full-width bg-azul0 texto-amarillo1 text-bold" label="Registrate aquí" v-on:click="registro=true"
+            <!-- <div class="col"> Si aun no tienes cuenta <span class="texto-amarillo1">da click en el siguiente botón </span></div> -->
+            <div class="col"> Si aun no tienes cuenta da click en el siguiente botón</div>
+            <q-btn class="full-width bg-azul0 texto-amarillo1 text-bold" label="Registrate aquí" v-on:click="() => router.push('/school/register')"
                 :loading="usuario.usuario.loading">
             </q-btn>
         </div>
     </q-card>
-    <q-dialog persistent v-model="registro" transition-show="slide-up" transition-hide="slide-down">
+    <!-- <q-dialog persistent v-model="registro" transition-show="slide-up" transition-hide="slide-down">
         <formulario-registro></formulario-registro>
-    </q-dialog>
+    </q-dialog> -->
     <q-dialog persistent v-model="restaurar" transition-show="slide-up" transition-hide="slide-down">
         <formulario-restaurar></formulario-restaurar>
     </q-dialog>

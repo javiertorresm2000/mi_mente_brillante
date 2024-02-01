@@ -1,83 +1,86 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from '../layouts/Dashboard.vue'
 import Login from '../layouts/Login.vue'
+import Register from '../layouts/Register.vue'
 
 const routes = [
-    {
-      path: '/school/dashboard',
-      component: Dashboard,
-      children:[
-        {
-          path:'inicio',
-          component: () => import('../pages/Inicio.vue')
-        },
+  {
+    path: '/school/dashboard',
+    component: Dashboard,
+    children: [
       {
-        path:'usuario',
+        path: 'inicio',
+        component: () => import('../pages/Inicio.vue')
+      },
+      {
+        path: 'usuario',
         component: () => import('../pages/Usuario.vue')
       },
       {
-        path:'induccion',
+        path: 'induccion',
         component: () => import('../pages/Induccion.vue')
       },
       {
-        path:'ventas',
+        path: 'ventas',
         component: () => import('../pages/Ventas.vue')
       },
       {
-        path:'configuracion',
+        path: 'configuracion',
         component: () => import('../pages/Configuracion.vue')
       },
       {
-        path:'Conferencias',
+        path: 'Conferencias',
         component: () => import('../pages/Conferencias.vue')
       },
       {
         path: 'programas',
         component: () => import('../layouts/Programas.vue'),
-        children:[{
-          path:'marketing',
+        children: [{
+          path: 'marketing',
           component: () => import('../pages/Marketing.vue')
         }]
       },
       {
-        path:'curso',
+        path: 'curso',
         component: () => import('../layouts/Curso.vue'),
-        children:[
+        children: [
           {
-            path:'libro-imagen',
+            path: 'libro-imagen',
             component: () => import('../layouts/Curso/VistaImagenes.vue')
           },
           {
-            path:'libro-video',
+            path: 'libro-video',
             component: () => import('../layouts/Curso/VistaVideos.vue')
           },
           {
-            path:'libro-audio',
+            path: 'libro-audio',
             component: () => import('../layouts/Curso/VistaAudios.vue')
           }
         ]
       }
-     
+    ]
+  },
+  {
+    path: '/school',
+    component: Login,
+    // children:[
+    //   {
+    //     path:'login',
+    //     component: () => import('../pages/Login.vue')
+    //   },
+    //   {
+    //     path:'register',
+    //     component:() => import('../pages/Register.vue')
+    //   }
+    // ]
+  },
+  {
+    path: '/school/register',
+    component: Register
+  }
 
-    ]
-      
-    },
-    {
-      path:'/school',
-      component:Login,
-      children:[{
-        path:'login',
-        component: () => import('../pages/Login.vue')
-      },
-      {
-        path:'register',
-        component:() => import('../pages/Register.vue')
-      }
-    ]
-    }
-    
-    
-  ]
+
+]
 
 const history = createWebHistory();
 
@@ -90,4 +93,4 @@ export default router;
 
 
 
-  
+
